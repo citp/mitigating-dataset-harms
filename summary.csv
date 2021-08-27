@@ -1,0 +1,46 @@
+id,parent,name,dataset or model?,assoc. paper sampled,num. sampled,doc. uses,doc. uses citing assoc. pap.,2020 doc. uses,new application,attribute annotations,post-processing,still available,includes orig. imgs.,license type,prohibits comm. use ,access url,notes
+An id to refer to each dataset or model by,The parent of the derivative dataset,The name of the dataset.,"""dataset"" if dataset and ""model"" if pre-trained model class (Oftentimes, multiple implementations of the same model class exist, possibly through multiple repositories)","""1"" if we used the associated paper of the dataset to generate our corpus",The number of papers in our corpus citing the associated paper.,The number of papers in our corpus where we could confirm the use of the dataset.,The number of documented uses of a dataset that cite the associated paper.,"The number of papers published in 2020 that we documented. Numbers are included for DukeMTMC and MS-Celeb-1M, which were both taken down in June 2019. LFW has not been retracted.","""1"" if the derivative explicitly or implicitly enables a task that can raise ethical questions.","""1"" if the derivative introduces sensitive attribute annotations.","""1"" if the derivative post-processes the original images, i.e., by aligning, cropping, or cleaning.","""1"" if we could confirm that the dataset / pre-trained model is still accessible","""1"" if the derivative includes the original images in some form.","The license under which the dataset or model is released. If available in multiple locations, we list all unique license types.","""prohibits"" if the available license clearly prohibits commercial use. ""some"" if some available licenses clearly prohibit commercial use.","The site where a dataset can be accessed. In some cases, when the datset is no longer available, we were able to find an archived version of such a site.",
+D1,DukeMTMC,DukeMTMC,dataset,1,164,14,14,1,,,,,1,CC BY-NC-SA 4.0,prohibits,http://web.archive.org/web/20190326130126/http://vision.cs.duke.edu/DukeMTMC/,
+D2,DukeMTMC,DukeMTMC-ReID,dataset,1,172,142,113,63,1,,,1,1,CC BY-NC-SA 4.0,prohibits,https://github.com/sxzrt/DukeMTMC-reID_evaluation,
+D3,DukeMTMC,DukeMTMC-VideoReID,dataset,1,24,11,11,5,1,,,1,1,CC BY-NC-SA 4.0,prohibits,https://github.com/Yu-Wu/DukeMTMC-VideoReID,
+D4,DukeMTMC,DukeMTMC-Attribute,dataset,,,10,,1,1,1,,1,,CC BY-NC-SA 4.0,prohibits,https://github.com/vana77/DukeMTMC-attribute,
+D5,DukeMTMC,DukeMTMC4ReID,dataset,,,3,,0,1,,,,1,CC BY-NC-SA 4.0,prohibits,https://github.com/NEU-Gou/DukeReID,
+D6,DukeMTMC,DukeMTMC Group,dataset,,,3,,1,1,,,,,,,?,We were unable to locate where this dataset is (was) made available.
+D7,DukeMTMC,DukeMTMC-SI-Tracklet,dataset,,,1,,1,1,,,,1,CC BY-NC-SA 4.0,prohibits,https://github.com/liminxian/DukeMTMC-SI-Tracklet,
+D8,DukeMTMC,Occluded-DukeMTMC,dataset,,,1,,1,1,,,*,1,CC BY-NC-SA 4.0,prohibits,https://github.com/lightas/Occluded-DukeMTMC-Dataset,"The derivative itself is no longer available, but a script to convert DukeMTMC-ReID into the derivative is available."
+D9,MS-Celeb-1M,MS-Celeb-1M,dataset,1,153,41,39,11,,,,1,1,"custom, none",prohibits,https://academictorrents.com/details/9e67eb7cc23c9417f39778a8e06cca5e26196a97,The original license is no longer publicly available.
+D10,MS-Celeb-1M,MS1MV2,dataset,1,183,13,13,8,,,1,1,1,none,,https://github.com/deepinsight/insightface/wiki/Dataset-Zoo,
+D11,MS-Celeb-1M,MS1M-RetinaFace,dataset,,,2,,2,,,1,1,1,none,,https://github.com/deepinsight/insightface/wiki/Dataset-Zoo,
+D12,MS-Celeb-1M,MS1M-LightCNN,dataset,,,3,,0,,,1,1,,MIT,,https://github.com/AlfredXiangWu/LightCNN/blob/master/README.md,
+D13,MS-Celeb-1M,MS1M-IBUG,dataset,,,3,,1,,,1,1,1,none,,"https://ibug.doc.ic.ac.uk/resources/lightweight-face-recognition-challenge-workshop/, https://github.com/deepinsight/insightface/wiki/Dataset-Zoo",
+D14,MS-Celeb-1M,MS-Celeb-1M-v1c,dataset,,,6,,4,,,1,1,1,custom,,"http://trillionpairs.deepglint.com/overview, https://archive.org/details/TrillionPairsDataset","The linked license points to the original license, which is no longer publicly available."
+D15,MS-Celeb-1M,Racial Faces in the Wild,dataset,,,1,,1,1,1,,1,1,custom,prohibits,http://whdeng.cn/RFW/testing.html,
+D16,MS-Celeb-1M,MS-Celeb-1M lowshot,dataset,,,4,,0,,,,,1,custom,prohibits,https://frchallenge.github.io/download/lowshot,"The linked license points to the original license, which is no longer publicly available."
+D17,MS-Celeb-1M,Universe,dataset,,,2,,1,,,,,,,,?,We were unable to locate where this dataset is (was) made available.
+M1,MS-Celeb-1M,VGGFace,model,,,6,,3,1,,,1,,"MIT, none",,https://github.com/ox-vgg/vgg_face2,
+M2,MS-Celeb-1M,Probabilistic Face Embeddings,model,,,1,,1,1,,,1,,MIT,,https://github.com/seasonSH/Probabilistic-Face-Embeddings,
+M3,MS-Celeb-1M,ArcFace / InsightFace,model,,,14,,13,1,,,1,,"MIT, Apache 2.0, custom, none",some,https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch,
+M4,MS-Celeb-1M,LightCNN,model,,,4,,3,1,,,1,,"custom, none",some,https://github.com/yxu0611/Tensorflow-implementation-of-LCNN,
+M5,MS-Celeb-1M,FaceNet,model,,,12,,5,1,,,1,,"MIT, none",,https://github.com/nyoki-mtl/keras-facenet,
+M6,MS-Celeb-1M,DREAM,model,,,1,,1,1,,,1,,BSD-2-Clause,,https://github.com/penincillin/DREAM,
+D18,LFW,LFW,dataset,1,220,105,103,-,,,,1,1,none,,http://vis-www.cs.umass.edu/lfw/,
+D19,LFW,LFWA,dataset,1,158,2,1,-,1,1,,1,1,none,,https://drive.google.com/drive/u/0/folders/0B7EVK8r0v71pQ3NzdzRhVUhSams,
+D20,LFW,LFW-a,dataset,1,31,14,12,-,,,1,1,1,none,,https://talhassner.github.io/home/projects/lfwa/,
+D21,LFW,LFW3D,dataset,1,24,3,2,-,,,1,1,1,none,,https://talhassner.github.io/home/publication/2015_CVPR_1,
+D22,LFW,LFW deep funneled,dataset,1,18,4,4,-,,,1,1,1,none,,http://vis-www.cs.umass.edu/lfw/#deep_funnel_cite,
+D23,LFW,LFW crop,dataset,1,8,2,2,-,,,1,1,1,none,,https://conradsanderson.id.au/lfwcrop/,
+D24,LFW,BLUFR protocol,dataset,1,2,1,1,-,,,,1,,none,,http://www.cbsr.ia.ac.cn/users/scliao/projects/blufr/,
+D25,LFW,LFW87,dataset,1,7,1,1,-,,,,,,,,?,We were unable to locate where this dataset is (was) made available.
+D26,LFW,LFW+,dataset,1,12,0,0,-,1,1,,1,1,custom,prohibits,http://biometrics.cse.msu.edu/Publications/Databases/MSU_LFW+/,
+D27,LFW,<no name given>,dataset,,,4,,-,1,1,,1,,none,,http://www.cs.columbia.edu/CAVE/databases/pubfig/download/lfw_attributes.txt,
+D28,LFW,<no name given>,dataset,,,4,,-,,,,1,,none,,http://lear.inrialpes.fr/people/guillaumin/data.php,
+D29,LFW,SMFRD,dataset,,,1,,-,1,,,1,1,none,,https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset,
+D30,LFW,LFW funneled,dataset,,,2,,-,,,1,1,1,none,,http://vis-www.cs.umass.edu/lfw/,
+D31,LFW,<no name given>,dataset,,,2,,-,1,1,,,,none,,http://web.archive.org/web/20161026012553/http://fipa.cs.kit.edu/431.php,
+D32,LFW,<no name given>,dataset,,,1,,-,,,,1,,none,,http://biometrics.cse.msu.edu/pub/recent.html,
+D33,LFW,MTFL,dataset,,,1,,-,1,1,,1,1,none,,http://mmlab.ie.cuhk.edu.hk/projects/TCDCN.html,
+D34,LFW,PubFig83 + LFW,dataset,,,2,,-,,,,1,1,none,,http://www.briancbecker.com/blog/research/pubfig83-lfw-dataset/,
+D35,LFW,Frontalized Faces in the Wild,dataset,,,1,,-,,,,1,1,none,,https://www.micc.unifi.it/resources/datasets/frontalized-faces-in-the-wild/,
+D36,LFW,ITWE,dataset,,,1,,-,1,,,1,1,custom,prohibits,https://ibug.doc.ic.ac.uk/resources/ibug-ears/,
+D37,LFW,Extended LFW,dataset,,,2,,-,,,,1,1,none,,http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm,
+D38,LFW,<no name given>,dataset,,,1,,-,,,,,,custom,prohibits,http://web.archive.org/web/20151025163615/http://www.vision.ee.ethz.ch/~mdantone/datasets/lfw_ffd_ann.txt,
