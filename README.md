@@ -1,5 +1,17 @@
 # Mitigating Dataset Harms Requires Stewardship:<br/>Lessons from 1000 Papers
 
+This repository contains supplemental data for the paper [**Mitigating Dataset Harms Requires Stewardship: Lessons from 1000 papers**](https://arxiv.org/abs/2108.02922).
+
+## License information
+
+All files in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+<img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="CC-BY-NC-SA image"/>
+
+Data collected using the [Semantic Scholar API](https://www.semanticscholar.org/product/api) (detailed in the descriptions below) are licensed under the [Semantic Scholar Dataset License](https://api.semanticscholar.org/license/).
+
+<img src="./s2-logo.svg" alt="Semantic Scholar logo" width="300"/>
+
 We make the following .csv files available:
 
 **msceleb1m_all.csv, dukemtmc_all.csv, lfw_all.csv**
